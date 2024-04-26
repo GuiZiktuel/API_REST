@@ -35,4 +35,20 @@ APP_PORT=3001
 APP_URL=http://localhost:3001
 
    ```
-Não se esqueça de acessar o arquivo config/database.js para exportar o modelo do SQLite, o banco de dados utilizado no projeto.
+Configurações SQLite abaixo:
+```sh
+  module.exports = {
+  
+  dialect: 'sqlite',
+  storage: './db.sqlite',
+
+  define: {
+    timestamps: true,
+    underscored: true,
+    underscoredAll: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+  },
+};
+
+   ```
