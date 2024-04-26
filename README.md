@@ -11,12 +11,27 @@ Desenvolvi um projeto em JavaScript para uma aplicação web, com ênfase no des
 
 
 ## Instalação
- git clone https://github.com/GuiZiktuel/API_REST
+Passos para instalar e configurar o projeto localmente:
 
-pip install -r requirements.txt
+## 1. Instale as dependências:
+   ```sh
+    npm i sequelize
+    npm i express
+    npx sequelize db:migrate
+    npm run dev
+   ```
+## 2. Configure as variáveis de ambiente no arquivo `.env`:
+   ```sh
+    **DATABASE='escola'
+DATABASE_HOST='127.0.0.1'
+DATABASE_PORT=3306
+DATABASE_USERNAME='root'
+DATABASE_PASSWORD='root'
 
- npm i
-npx sequelize db:migrate
-npx sequelize db:seed:all
-npm run dev
+TOKEN_SECRET='Qualquer_um'
+TOKEN_EXPIRATION=7d
 
+APP_PORT=3001
+APP_URL=http://localhost:3001
+**
+   ```
