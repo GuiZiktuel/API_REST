@@ -22,7 +22,7 @@ Passos para instalar e configurar o projeto localmente:
    ```
 ## 2. Configure as variáveis de ambiente no arquivo `.env`:
    ```sh
-    **DATABASE='escola'
+DATABASE='escola'
 DATABASE_HOST='127.0.0.1'
 DATABASE_PORT=3306
 DATABASE_USERNAME='root'
@@ -33,5 +33,6 @@ TOKEN_EXPIRATION=7d
 
 APP_PORT=3001
 APP_URL=http://localhost:3001
-**
+
    ```
+Não se esqueça de acessar o arquivo config/database.js para exportar o modelo do SQLite, o banco de dados utilizado no projeto.
