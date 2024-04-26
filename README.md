@@ -13,3 +13,10 @@ Desenvolvi um projeto em JavaScript para uma aplicação web, com ênfase no des
 ## Instalação
  git clone https://github.com/GuiZiktuel/API_REST
 
+pip install -r requirements.txt
+
+ npm i
+npx sequelize db:migrate
+npx sequelize db:seed:all
+npm run dev
+
