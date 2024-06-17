@@ -10,7 +10,7 @@ const LoginForm: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/tokens', { email, password });
+      const response = await axios.post('http://localhost:3001/tokens', { email, password });
       localStorage.setItem('token', response.data.token);
       setError('');
     } catch (err) {
