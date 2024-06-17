@@ -25,7 +25,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  width: 250px; /* Adjust width as needed */
+  width: 250px; 
 }
 
 .error {
