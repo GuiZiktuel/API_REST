@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from '../styles/RegisterStudent.module.css'; // Import CSS
+import styles from '../styles/RegisterStudent.module.css'; 
 
 const RegisterStudentPage: React.FC = () => {
   const [id, setId] = useState('');
@@ -16,22 +16,22 @@ const RegisterStudentPage: React.FC = () => {
     e.preventDefault();
 
     const studentData = {
-      id: parseInt(id), // Convert ID to integer
+      id: parseInt(id), 
       nome,
       sobrenome,
       email,
-      idade: parseInt(idade), // Convert age to integer
-      peso: parseFloat(peso), // Convert weight to float
-      altura: parseFloat(altura), // Convert height to float
+      idade: parseInt(idade), 
+      peso: parseFloat(peso), 
+      altura: parseFloat(altura), 
     };
 
     try {
       const response = await axios.post('http://localhost:3000/register-student', studentData);
-      console.log('Student registration successful:', response.data); // Replace with appropriate logic
-      setError(''); // Clear error message
+      console.log('Student registration successful:', response.data); 
+      setError(''); 
     } catch (err) {
       console.error(err);
-      setError('Falha no registro de aluno'); // Display error message
+      setError('Falha no registro de aluno'); 
     }
   };
 
