@@ -1,7 +1,7 @@
 ## API_REST
 
 ## Descrição
-Desenvolvi um projeto em JavaScript para uma aplicação web, com foco no desenvolvimento do back-end. Implementei uma API que se integra a um sistema de usuários e gerencia a criação de perfis de alunos para uma escola, utilizando o Express como base do projeto. Para interagir de forma eficiente com as tabelas do banco de dados, empregamos o Sequelize, assegurando uma manipulação precisa dos dados. Além disso, adotamos o ESLint para garantir um padrão de código consistente e de alta qualidade em todo o projeto.
+Desenvolvi um projeto em JavaScript para uma aplicação web, com foco no desenvolvimento do back-end. Implementei uma API que se integra a um sistema de usuários e gerencia a criação de perfis de alunos para uma escola, utilizando o Express como base do projeto. Para interagir de forma eficiente com as tabelas do banco de dados, empregamos o Sequelize, assegurando uma manipulação precisa dos dados. Além disso, adotamos o ESLint para garantir um padrão de código consistente e de alta qualidade em todo o projeto. Também foi implementado o front-end, que inclui uma página de login, uma lista de alunos e a funcionalidade de cadastro de novos alunos, utilizando a ferramenta Next.js.
 
 
 ## Funcionalidades
@@ -15,6 +15,7 @@ Passos para instalar e configurar o projeto localmente:
 
 ## 1. Instale as dependências:
    ```sh
+    npm i next.js
     npm i sequelize
     npm i express
     npx sequelize db:migrate
